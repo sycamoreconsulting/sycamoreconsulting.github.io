@@ -1,64 +1,53 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-  <head>
-    <link rel="shortcut icon" href="//ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png" type="image/x-icon">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Contact</title>
-    <link href='https://docs.google.com/static/spreadsheets/client/css/1264762022-published_form_compiled.css' type='text/css' rel='stylesheet'>
-  </head>
-  <body dir="ltr" itemscope itemtype="http://schema.org/CreativeWork/FormObject">
-    <meta itemprop="name" content="Contact">
-    <meta itemprop="embedUrl" content="https://docs.google.com/spreadsheet/embeddedform?formkey=dGg4alRYZ2d6bU55TlNpOXJ3aFBHX1E6MA">
-    <meta itemprop="faviconUrl" content="//ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
-
+---
+layout: default
+title: Contact - Sycamore Consulting
+description:
+---
     <iframe name="iframe_cdrvyjjq" id="iframe_cdrvyjjq" style="display:none;" onload="if(typeof sent_cdrvyjjq!='undefined'){window.location='www.sycamoreconsulting.co.uk/thankyou.html';}"></iframe>
-    <form onsubmit="sent_cdrvyjjq=true" target="iframe_cdrvyjjq" action="https://docs.google.com/spreadsheet/formResponse?formkey=dGg4alRYZ2d6bU55TlNpOXJ3aFBHX1E6MA&amp;ifq" method="POST" id="ss-form">
-
-      <label for="entry_0">Your Name</label>
-      <input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0" />
-
-      <label class="ss-q-title" for="entry_1">Email Address</label>
-      <input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1" />
-
-      <label class="ss-q-title" for="entry_2">Phone Number</label>
-      <input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2" />
-
-      <label class="ss-q-title" for="entry_3">Company Name</label>
-      <input type="text" name="entry.3.single" value="" class="ss-q-short" id="entry_3" />
-
-      <label class="ss-q-title" for="entry_4">Comment or Questions</label>
-      <textarea name="entry.4.single" rows="8" cols="75" class="ss-q-long" id="entry_4"></textarea>
-
-      <input type="hidden" name="pageNumber" value="0">
-      <input type="hidden" name="backupCache" value="">
-
-
-      <input type="submit" name="submit" value="Submit">
-
+    <form class="form-horizontal" onsubmit="sent_cdrvyjjq=true" target="iframe_cdrvyjjq" action="https://docs.google.com/spreadsheet/formResponse?formkey=dGg4alRYZ2d6bU55TlNpOXJ3aFBHX1E6MA&amp;ifq" method="POST" id="ss-form">
+      <input type="hidden" name="pageNumber" value="0" />
+      <input type="hidden" name="backupCache" value="" />
+      <div class="form-group">
+        <label for="entry_0">Your Name</label>
+        <input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0" />
+      </div>
+      <div class="form-group">
+        <label class="ss-q-title" for="entry_1">Email Address</label>
+        <input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1" />
+      </div>
+      <div class="form-group">
+        <label class="ss-q-title" for="entry_2">Phone Number</label>
+        <input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2" />
+      </div>
+      <div class="form-group">
+        <label class="ss-q-title" for="entry_3">Company Name</label>
+        <input type="text" name="entry.3.single" value="" class="ss-q-short" id="entry_3" />
+      </div>
+      <div class="form-group">
+        <label class="ss-q-title" for="entry_4">Comment or Questions</label>
+        <textarea name="entry.4.single" rows="8" cols="75" class="ss-q-long" id="entry_4"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" name="submit" value="Submit" />
+      </div>
     </form>
+    <script type="text/javascript">  
+      (function() {
+        var divs = document.getElementById('ss-form').getElementsByTagName('div');
+        var numDivs = divs.length;
+        for (var j = 0; j < numDivs; j++) {
+          if (divs[j].className == 'errorbox-bad') {
+            divs[j].lastChild.firstChild.lastChild.focus();
+            return;
+          }
+        }
 
-    <script type="text/javascript">
-          
-          (function() {
-    var divs = document.getElementById('ss-form').
-    getElementsByTagName('div');
-    var numDivs = divs.length;
-    for (var j = 0; j < numDivs; j++) {
-    if (divs[j].className == 'errorbox-bad') {
-    divs[j].lastChild.firstChild.lastChild.focus();
-    return;
-    }
-    }
-    for (var i = 0; i < numDivs; i++) {
-    var div = divs[i];
-    if (div.className == 'ss-form-entry' &&
-    div.firstChild &&
-    div.firstChild.className == 'ss-q-title') {
-    div.lastChild.focus();
-    return;
-    }
-    }
-    })();
+        for (var i = 0; i < numDivs; i++) {
+          var div = divs[i];
+          if (div.className == 'ss-form-entry' && div.firstChild && div.firstChild.className == 'ss-q-title') {
+            div.lastChild.focus();
+            return;
+          }
+        }
+      })();
     </script>
-  </body>
-</html>
