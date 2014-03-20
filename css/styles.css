@@ -2,3 +2,7 @@ body {
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
+
+h2 {
+	font-size: 180%;
+}
