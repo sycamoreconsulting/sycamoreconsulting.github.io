@@ -6,3 +6,8 @@ body {
 h2 {
 	font-size: 180%;
 }
+
+.glyphicon {
+	font-size:1000%;
+	margin-left:25%;
+}
