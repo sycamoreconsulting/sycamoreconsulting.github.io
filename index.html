@@ -7,17 +7,15 @@ description:
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <video id="myVid" width="320" height="240" autoplay="autoplay" controls="false" style="position:relative;bottom:0;float:right;">
+            <video id="tree-growing" width="320" height="240" autoplay="autoplay" controls="false" style="position:relative;bottom:0;float:right;">
               <source type="video/mp4" src="/videos/000019772140_HDFlashVideo.mp4"></source>
             </video>
 <script type="text/javascript">
-var vid = document.getElementById("myVid");
+var vid = document.getElementById("tree-growing");
 vid.addEventListener("timeupdate", function(){
-// Check you time here and
-if(t === 13000) //Where t = CurrentTime
-{
-vid.stop();// Stop the Video
-}
+    if(this.currentTime >= 13 * 1000) {
+        this.pause();
+    }
 });
 </script>
             <h1>Grow your business with us.</h1>
