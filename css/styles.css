@@ -15,6 +15,10 @@ footer .container {
     padding-top: 16px;
 }
 
+footer .container > p {
+    margin: 0;
+}
+
 .glyphicon {
 	font-size:800%;
 }
@@ -22,6 +26,7 @@ footer .container {
 .jumbotron {
 	background: linear-gradient(#ADD8E6 0%, #FDFDFD 50%, #FDFDFD 100%) repeat-x scroll 0 0 rgba(0, 0, 0, 0);
     border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 0;
 }
 
 #homepage-main {
