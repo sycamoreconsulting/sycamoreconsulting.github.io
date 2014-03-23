@@ -3,5 +3,6 @@ Disallow:
 
 # Stop aboutus.org from scraping content
 User-agent: AboutUsBot 
-Disallow: / 
+Disallow: /
 
+Sitemap: http://www.sycamoreconsulting.co.uk/sitemap.xml
