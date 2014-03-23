@@ -46,6 +46,12 @@ footer .container > p {
 	text-align: justify;
 }
 
+#tree-growing {
+	position:relative;
+	bottom:-101px;
+	float:right;
+}
+
 .glyphicon-pencil {
 	color: royalblue;
 }
