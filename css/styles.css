@@ -52,6 +52,20 @@ footer .container > p {
 	float:right;
 }
 
+/* Mailchimp */
+
+#mce-error-response,
+#mce-success-response {
+	display:none;
+}
+
+#mce-hidden-field {
+	position: absolute;
+	left: -5000px;
+}
+/* Mailchimp */
+
+
 .glyphicon-pencil {
 	color: royalblue;
 }
