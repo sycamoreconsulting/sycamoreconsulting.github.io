@@ -1,0 +1,69 @@
+---
+layout: default
+title: Contact - Sycamore Consulting
+description: Sycamore Consulting...
+---
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <iframe name="iframe_cdrvyjjq" id="iframe_cdrvyjjq" style="display:none;" onload="if(typeof sent_cdrvyjjq!='undefined'){window.location='www.sycamoreconsulting.co.uk/thankyou.html';}"></iframe>
+          <form class="form-horizontal" onsubmit="sent_cdrvyjjq=true" target="iframe_cdrvyjjq" action="https://docs.google.com/spreadsheet/formResponse?formkey=dGg4alRYZ2d6bU55TlNpOXJ3aFBHX1E6MA&amp;ifq" method="POST" id="ss-form">
+            <input type="hidden" name="pageNumber" value="0" />
+            <input type="hidden" name="backupCache" value="" />
+            <div class="form-group">
+              <label for="entry_0" class="col-sm-4 control-label">Your Name</label>
+              <div class="col-sm-6">
+                <input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="entry_1" class="col-sm-4 control-label">Email Address</label>
+              <div class="col-sm-6">
+                <input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="entry_2" class="col-sm-4 control-label">Phone Number</label>
+              <div class="col-sm-6">
+                <input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="entry_3" class="col-sm-4 control-label">Company Name</label>
+              <div class="col-sm-6">
+                <input type="text" name="entry.3.single" value="" class="ss-q-short" id="entry_3" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="entry_4" class="col-sm-4 control-label">Comment or Questions</label>
+              <div class="col-sm-6">
+                <textarea name="entry.4.single" rows="8" cols="75" class="ss-q-long" id="entry_4"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+          </form>
+          <script type="text/javascript">  
+            (function() {
+              var divs = document.getElementById('ss-form').getElementsByTagName('div');
+              var numDivs = divs.length;
+              for (var j = 0; j < numDivs; j++) {
+                if (divs[j].className == 'errorbox-bad') {
+                  divs[j].lastChild.firstChild.lastChild.focus();
+                  return;
+                }
+              }
+
+              for (var i = 0; i < numDivs; i++) {
+                var div = divs[i];
+                if (div.className == 'ss-form-entry' && div.firstChild && div.firstChild.className == 'ss-q-title') {
+                  div.lastChild.focus();
+                  return;
+                }
+              }
+            })();
+          </script>
+        </div>
+      </div>
+    </div>
