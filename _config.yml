@@ -7,7 +7,7 @@ destination:	./_site
 plugins:	./_plugins
 layouts:	./_layouts
 include:	[]
-exclude:	['deploy.sh','s3_website.yml']
+exclude:	[]
 keep_files:	['.git']
 gems:		[]
 timezone:	nil
@@ -15,28 +15,7 @@ encoding:	UTF-8
 
 url: http://www.sycamoreconsulting.co.uk
 
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/robots.txt"
-        - "/error.html"
-        - "/thankyou.html"
-    include_posts:
-        - "/index.html"
-    change_frequency_name: "change_frequency"
-    priority_name: "priority"
-
-asset_bundler:
-    compress:
-        js: false
-        css: false
-    base_path: /assets/
-    server_url:
-    remove_bundled: false
-    dev: false
-    markup_templates:
-        js: "<script type=\"text/javascript\" src=\"{{url}}\"></script>\n"
-        css: "<link rel=\"stylesheet\" type=\"text/css\" href=\"{{url}}\" />\n"
-
+gems:
+  - jekyll-redirect-from
 # Google Tag Manager
 google_tag_manager_id: GTM-KKX72Q
