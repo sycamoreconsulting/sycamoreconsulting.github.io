@@ -1,39 +1,27 @@
 ---
-layout: default
+layout: article
 title: How to Block Spam Bots by their country
 ---
-<h1>How to Block Spam Bots by their country</h1>
-
 <p>I recently had issues on one of our clients websites with spam bots. The client had an enquiry form on their website which was being targeted by spam bots constantly submitting erroneous data.</p>
-
 <p>This made the owner anxious that someone was trying to hack his site, I assured him that this was not the case, however they were a constant nuisance as they were throwing our conversion statistics out, not to mention the lost staff time in deleting these fake enquiries.</p>
 
 <h2>Gathering Data</h2>
-
 <p>In order to effectively stop these bots I decided that the best thing to do was to gather a better understanding of them so that I could block them without blocking legitimate users.</p>
-
 <p>I did this by adding two extra hidden fields to the enquiry form, one hidden field for the IP Address and one for the HTTP User-Agent string. Whenever the form was rendered these fields had already been filled out in the back-end PHP script.</p>
-
 <p>I also created a field for the status of these enquiries and modified the client's admin system so that they could simply mark an enquiry as spam and it would disappear from their list of enquiries.</p>
 
 <h2>Analysing the Data</h2>
 <p>After a couple of days I compiled a list of the enquiries which had been marked as spam and started looking at data which was common amongst all of the spammy enquiries. At first I couldn't really see anything that stuck out, some of the bots had PHP as their User-Agent, but some were masquerading as Firefox and all of the IP addresses were different.</p>
-
 <p>However after checking all of their IP addresses against the country I found something that could be used. None of these IP addresses were based in the UK and my client is a finance company based in the UK who is only able to offer their services to people living within the UK.</p>
 
 <h2>The solution</h2>
 <p>I didn't want to be as drastic as simply blocking all non-UK IP addresses from connecting to the site as there may be a genuine customer who was connecting from non-UK IP address, such as someone at the airport returning from holiday or someone using Opera on their mobile phone (Opera Mobile directs all traffic through their servers so that it is compressed for speed).</p>
-
 <p>I settled on creating a new page on the site with a notice informing the visitor:</p>
-
 <div class="well">
 You appear to be visiting this website from outside of the UK.
 Unfortunately we are unable to offer our services to non UK residents.
 However if you do infact live in the UK, please click on the button below to continue.
 </div>
-
 <p>The page also had a form with a simple submit button that took the user to the main page.<p>
-
 <p>After I created this page I then installed MaxMinds geoip module for apache and wrote rewrite rules so that UK visitors would not be redirected, but all visitors with non UK IP addresses would visit the blocking page.</p>
-
 <p>Since I have done this there has been no loss in real leads, and the spam bots have been blocked as well.</p>
