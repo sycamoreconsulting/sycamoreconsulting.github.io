@@ -19,7 +19,7 @@
     {% if page.sitemap != null and page.sitemap != empty %}
       {% assign url = page.url|remove:'index.html' %}
       <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
+        <loc>{{ site.url }}{{ url }}</loc>
         <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
         <changefreq>{{ page.sitemap.changefreq }}</changefreq>
         <priority>{{ page.sitemap.priority }}</priority>
