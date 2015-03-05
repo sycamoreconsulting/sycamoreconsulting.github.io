@@ -46,26 +46,6 @@ footer .container > p {
 	text-align: justify;
 }
 
-#tree-growing {
-	position:relative;
-	bottom:-101px;
-	float:right;
-}
-
-/* Mailchimp */
-
-#mce-error-response,
-#mce-success-response {
-	display:none;
-}
-
-#mce-hidden-field {
-	position: absolute;
-	left: -5000px;
-}
-/* Mailchimp */
-
-
 .glyphicon-pencil {
 	color: royalblue;
 }
