@@ -15,7 +15,7 @@ encoding:	UTF-8
 
 url: http://www.sycamoreconsulting.co.uk
 
-#gems:
-#  - jekyll-redirect-from
+gems:
+  - jekyll-redirect-from
 # Google Tag Manager
 google_tag_manager_id: GTM-KKX72Q
