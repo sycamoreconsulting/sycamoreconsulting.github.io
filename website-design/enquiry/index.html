@@ -32,7 +32,8 @@ description: Sycamore Consulting...
                 <label for="entry_0" class="right">Name</label>
               </div>
               <div class="medium-8 columns">
-                <input type="text" name="entry.0.single" id="entry_0" />
+                <input type="text" name="entry.0.single" id="entry_0" required pattern="alpha" />
+                <small class="error">Name required.</small>
               </div>
             </div>
             <div class="row">
@@ -40,7 +41,8 @@ description: Sycamore Consulting...
                 <label for="entry_1" class="right">Email Address</label>
               </div>
               <div class="medium-8 columns">
-                <input type="text" name="entry.1.single" id="entry_1" />
+                <input type="text" name="entry.1.single" id="entry_1" required pattern="email" />
+                <small class="error">Valid email required.</small>
               </div>
             </div>
             <div class="row">
@@ -48,7 +50,8 @@ description: Sycamore Consulting...
                 <label for="entry_2" class="right">Phone Number</label>
               </div>
               <div class="medium-8 columns">
-                <input type="text" name="entry.2.single" id="entry_2" />
+                <input type="text" name="entry.2.single" id="entry_2" required pattern="number" />
+                <small class="error">Phone Number required.</small>
               </div>
             </div>
             <div class="row">

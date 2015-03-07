@@ -24,7 +24,7 @@ description: Sycamore Consulting...
       <div class="row">
         <div class="medium-9 large-9 columns">
           <iframe name="iframe_cdrvyjjq" id="iframe_cdrvyjjq" style="display:none;" onload="if(typeof sent_cdrvyjjq!='undefined'){window.location='http://www.sycamoreconsulting.co.uk/conversion-rate-optimisation/enquiry/completed/';}"></iframe>
-          <form class="form-horizontal" onsubmit="sent_cdrvyjjq=true" target="iframe_cdrvyjjq" action="https://docs.google.com/spreadsheet/formResponse?formkey=dGg4alRYZ2d6bU55TlNpOXJ3aFBHX1E6MA&amp;ifq" method="POST" id="ss-form">
+          <form class="form-horizontal" onsubmit="sent_cdrvyjjq=true" target="iframe_cdrvyjjq" action="https://docs.google.com/spreadsheet/formResponse?formkey=dGg4alRYZ2d6bU55TlNpOXJ3aFBHX1E6MA&amp;ifq" method="POST" data-abide>
             <input type="hidden" name="pageNumber" value="0" />
             <input type="hidden" name="backupCache" value="" />
             <div class="row">
@@ -32,7 +32,8 @@ description: Sycamore Consulting...
                 <label for="entry_0" class="right">Name</label>
               </div>
               <div class="medium-8 columns">
-                <input type="text" name="entry.0.single" id="entry_0" />
+                <input type="text" name="entry.0.single" id="entry_0" required pattern="alpha" />
+                <small class="error">Name required.</small>
               </div>
             </div>
             <div class="row">
@@ -40,7 +41,8 @@ description: Sycamore Consulting...
                 <label for="entry_1" class="right">Email Address</label>
               </div>
               <div class="medium-8 columns">
-                <input type="text" name="entry.1.single" id="entry_1" />
+                <input type="text" name="entry.1.single" id="entry_1" required pattern="email" />
+                <small class="error">Valid email required.</small>
               </div>
             </div>
             <div class="row">
@@ -48,7 +50,8 @@ description: Sycamore Consulting...
                 <label for="entry_2" class="right">Phone Number</label>
               </div>
               <div class="medium-8 columns">
-                <input type="text" name="entry.2.single" id="entry_2" />
+                <input type="text" name="entry.2.single" id="entry_2" required pattern="number" />
+                <small class="error">Phone Number required.</small>
               </div>
             </div>
             <div class="row">
