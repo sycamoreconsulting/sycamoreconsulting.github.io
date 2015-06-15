@@ -1,6 +1,6 @@
 name: Sycamore Consulting
 markdown: redcarpet
-highlighter: true
+pygments: true
 
 source:		.
 destination:	./_site
