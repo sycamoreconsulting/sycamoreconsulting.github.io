@@ -9,6 +9,45 @@ sitemap:
 redirect_from: "/intl/en-gb/home/"
 redirect_from: "/intl/en-gb/search-engine-optimisation/"
 ---
+<style type="text/css">
+.header-unit {
+  height: 150px;
+  border: 2px solid #000;
+  border-right:none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+}
+#video-container {
+	position: absolute;
+}
+#video-container {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:0;
+}
+video.fillWidth {
+	width: 100%;
+}
+</style>
+<div class="header-unit">
+<div id="video-container">
+<video autoplay loop class="fillWidth">
+<source src="http://www.sycamoreconsulting.co.uk/video/trees.mp4" type="video/mp4"/>
+<!-- 
+<source src="http://yourwebsite.com/your-video-file.ogg" type="video/ogg"/>
+<source src="http://yourwebsite.com/your-video-file.webm" type="video/webm"/>
+-->
+Your browser does not support the video tag. I suggest you upgrade your browser.
+</video>
+</div><!-- end video-container -->
+</div><!-- end .header-unit -->
 		<section id="homepage-hero">
 			<div class="row">
 				<div class="medium-12 large-12 columns">
