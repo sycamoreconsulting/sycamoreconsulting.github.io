@@ -3,79 +3,77 @@ layout: default
 title: Enquire about Conversion Rate Optimisation - Sycamore Consulting
 description: Sycamore Consulting...
 ---
-    <style type="text/css">
-      .top-bar .name h1 a {
-        font-weight: 100;
-      }
+		<style type="text/css">
+			.top-bar .name h1 a {
+				font-weight: 100;
+			}
 
-      .top-bar .name h1 a,
-      nav section ul li a {
-        font-family: 'Roboto', sans-serif;
-      }
+			.top-bar .name h1 a,
+			nav section ul li a {
+				font-family: 'Roboto', sans-serif;
+			}
 
-      #enquiry-main {
-        font-family: 'Roboto', sans-serif;
-        padding: 100px 20px 0;
-        position: relative;
-        text-align: left;
-      }
-    </style>
-    <section id="enquiry-main">
-      <div class="row">
-        <div class="medium-9 large-9 columns">
-          <iframe name="iframe_cdrvyjjq" id="iframe_cdrvyjjq" style="display:none;" onload="if(typeof sent_cdrvyjjq!='undefined'){window.location='http://www.sycamoreconsulting.co.uk/conversion-rate-optimisation/enquiry/completed/';}"></iframe>
-          <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dGg4alRYZ2d6bU55TlNpOXJ3aFBHX1E6MA&amp;ifq" method="POST" data-abide>
-            <input type="hidden" name="pageNumber" value="0" />
-            <input type="hidden" name="backupCache" value="" />
-            <div class="row">
-              <div class="medium-4 columns">
-                <label for="entry_0" class="right">Name</label>
-              </div>
-              <div class="medium-8 columns">
-                <input type="text" name="entry.0.single" id="entry_0" required pattern="alpha" />
-                <small class="error">Name required.</small>
-              </div>
-            </div>
-            <div class="row">
-              <div class="medium-4 columns">
-                <label for="entry_1" class="right">Email Address</label>
-              </div>
-              <div class="medium-8 columns">
-                <input type="text" name="entry.1.single" id="entry_1" required pattern="email" />
-                <small class="error">Valid email required.</small>
-              </div>
-            </div>
-            <div class="row">
-              <div class="medium-4 columns">
-                <label for="entry_2" class="right">Phone Number</label>
-              </div>
-              <div class="medium-8 columns">
-                <input type="text" name="entry.2.single" id="entry_2" required pattern="number" />
-                <small class="error">Phone Number required.</small>
-              </div>
-            </div>
-            <div class="row">
-              <div class="medium-4 columns">
-                <label for="entry_3" class="right">Company Name</label>
-              </div>
-              <div class="medium-8 columns">
-                <input type="text" name="entry.3.single" id="entry_3" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="medium-4 columns">
-                <label for="entry_4" class="right">Comments or Questions</label>
-              </div>
-              <div class="medium-8 columns">
-                <textarea name="entry.4.single" rows="8" cols="75" id="entry_4"></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="medium-12 columns">
-                <input class="button right" type="submit" name="submit" value="Submit" />
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+			#enquiry-main {
+				font-family: 'Roboto', sans-serif;
+				padding: 100px 20px 0;
+				position: relative;
+				text-align: left;
+			}
+		</style>
+		<section id="enquiry-main">
+			<div class="row">
+				<div class="medium-9 large-9 columns">
+					<form action="http://sycamoreconsulting-crm.herokuapp.com/lead/create" name="lead" method="POST" data-abide>
+						<input type="hidden" name="redirect_url" value="http://www.sycamoreconsulting.co.uk/website-design/enquiry/completed/" />
+						<div class="row">
+							<div class="medium-4 columns">
+								<label for="lead[person][name]" class="right">Name</label>
+							</div>
+							<div class="medium-8 columns">
+								<input type="text" name="lead[person][name]" required pattern="alpha" />
+								<small class="error">Name required.</small>
+							</div>
+						</div>
+						<div class="row">
+							<div class="medium-4 columns">
+								<label for="lead[person][emails][0][emailAddress]" class="right">Email Address</label>
+							</div>
+							<div class="medium-8 columns">
+								<input type="text" name="lead[person][emails][0][emailAddress]" required pattern="email" />
+								<small class="error">Valid email required.</small>
+							</div>
+						</div>
+						<div class="row">
+							<div class="medium-4 columns">
+								<label for="lead[person][telephones][0][phoneNumber]" class="right">Phone Number</label>
+							</div>
+							<div class="medium-8 columns">
+								<input type="text" name="lead[person][telephones][0][phoneNumber]" required pattern="number" />
+								<small class="error">Phone Number required.</small>
+							</div>
+						</div>
+						<div class="row">
+							<div class="medium-4 columns">
+								<label for="lead[company][name]" class="right">Company Name</label>
+							</div>
+							<div class="medium-8 columns">
+								<input type="text" name="lead[company][name]" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="medium-4 columns">
+								<label for="lead[comments]" class="right">Comments or Questions</label>
+							</div>
+							<div class="medium-8 columns">
+								<textarea name="lead[comments]" rows="8" cols="75"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="medium-12 columns">
+								<input class="button right" type="submit" name="submit" value="Submit" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
