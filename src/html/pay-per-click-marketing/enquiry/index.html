@@ -48,15 +48,15 @@
 				text-align: left;
 			}
 		</style>
-		<section id="enquiry-main" style="background: aliceblue;">
+		<section id="enquiry-main" style="/* background: aliceblue; */ padding:24px; border-top: 1px solid #fff;color: #fff;text-shadow: 1px 1px #333;">
 			<div class="row">
 				<div class="large-12 columns">
-					<h1 style="font-family: &quot;Roboto&quot;;font-weight: 100;">Hire a Pay Per Click Consultant</h1>
+					<h1 style="font-family: &quot;Roboto&quot;;font-weight: 100;color: #fff;">Hire a Pay Per Click Consultant</h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="medium-6 large-6 columns">
-					<div id="form-background" style="background-color: rgb(200, 208, 255);padding: 20px;border: 1px solid #999;">
+					<div id="form-background" style="/* background-color: rgb(200, 208, 255); */padding: 20px;border: 1px solid #666;opacity: 0.7;background: #333;">
 						<div class="row">
 							<div class="large-12 columns">
 								<form action="http://sycamoreconsulting-crm.herokuapp.com/lead/create" name="lead" method="POST" data-abide="" novalidate="novalidate">
@@ -65,7 +65,7 @@
 										<div class="medium-4 columns">
 											<label for="lead[person][name]" class="right">Name</label>
 										</div>
-										<div class="medium-8 columns">
+										<div class="medium-6 columns end">
 											<input type="text" name="lead[person][name]" required="" pattern="alpha" aria-invalid="false">
 											<small class="error">Name required.</small>
 										</div>
@@ -83,7 +83,7 @@
 										<div class="medium-4 columns">
 											<label for="lead[person][telephones][0][phoneNumber]" class="right">Phone Number</label>
 										</div>
-										<div class="medium-8 columns">
+										<div class="medium-4 columns end">
 											<input type="text" name="lead[person][telephones][0][phoneNumber]" required="" pattern="number" aria-invalid="false">
 											<small class="error">Phone Number required.</small>
 										</div>
@@ -98,7 +98,9 @@
 									</div>
 									<div class="row">
 										<div class="medium-12 columns">
-											<label for="lead[comments]" class="right">Comments or Questions</label>
+											<label for="lead[comments]" class="right" style="
+    margin-top: 0;
+">Comments or Questions</label>
 										</div>
 									</div>
 									<div class="row">
@@ -108,7 +110,7 @@
 									</div>
 									<div class="row">
 										<div class="medium-12 columns">
-											<input class="button right" type="submit" name="submit" value="Submit" aria-invalid="false" style="margin: 0;">
+											<input class="button right" type="submit" name="submit" value="Send" aria-invalid="false" style="margin: 0;">
 										</div>
 									</div>
 								</form>
@@ -117,11 +119,11 @@
 					</div>
 				</div>
 				<div class="medium-6 large-6 columns">
-					<h2 style="font-family: &quot;Roboto&quot;;font-weight: 100;font-size: 1.6875rem;">Increase the visitors to your site</h2>
+					<h2 style="font-family: &quot;Roboto&quot;;font-weight: 100;font-size: 1.6875rem;color: #fff;/* text-shadow: 1px 1px green; */">Increase the visitors to your site</h2>
 					<p style="font-family: &quot;Roboto&quot;;font-weight: 100;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue, nibh vitae rhoncus fringilla, tortor neque vehicula felis, in pharetra turpis quam ut nisl. Vivamus id pulvinar dolor. In cursus velit mi, at mollis odio rhoncus id.</p>
-					<h2 style="font-family: &quot;Roboto&quot;;font-weight: 100;font-size: 1.6875rem;">Increase your sales</h2>
+					<h2 style="font-family: &quot;Roboto&quot;;font-weight: 100;font-size: 1.6875rem;color: #fff;">Increase your sales</h2>
 					<p style="font-family: &quot;Roboto&quot;;font-weight: 100;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue, nibh vitae rhoncus fringilla, tortor neque vehicula felis, in pharetra turpis quam ut nisl. Vivamus id pulvinar dolor. In cursus velit mi, at mollis odio rhoncus id.</p>
-					<h2 style="font-family: &quot;Roboto&quot;;font-weight: 100;font-size: 1.6875rem;">Pay only for the clicks</h2>
+					<h2 style="font-family: &quot;Roboto&quot;;font-weight: 100;font-size: 1.6875rem;color: #fff;">Pay only for the clicks</h2>
 					<p style="font-family: &quot;Roboto&quot;;font-weight: 100;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue, nibh vitae rhoncus fringilla, tortor neque vehicula felis, in pharetra turpis quam ut nisl. Vivamus id pulvinar dolor. In cursus velit mi, at mollis odio rhoncus id.</p>
 				</div>
 			</div>
