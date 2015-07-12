@@ -44,3 +44,20 @@
 				}
 			}
 		}
+
+		nav.top-bar.expanded {
+			div.top-bar-section {
+				ul {
+					li {
+						background: #333;
+						padding: 10px;
+						border-top: 1px solid #666;
+						border-bottom: 1px solid #666;
+					}
+				}
+
+				ul.right {
+					display: none;
+				}
+			}
+		}
