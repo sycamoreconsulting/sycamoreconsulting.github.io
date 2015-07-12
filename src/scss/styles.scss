@@ -1,0 +1,406 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+
+//  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+//  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+@import "variables";
+@import "mixins";
+@import "path";
+@import "core";
+@import "larger";
+@import "fixed-width";
+@import "list";
+@import "bordered-pulled";
+@import "animated";
+@import "rotated-flipped";
+@import "stacked";
+@import "icons";
+
+
+
+
+        body {
+          background: #333;
+          font-weight: 100;
+        }
+
+      #homepage-hero {
+        background: #074e68;
+        height: 650px;
+        padding: 70px 20px 0;
+        position: relative;
+        text-align: left;
+      }
+
+      #homepage-hero h1 {
+        font-size: 4em;
+        font-weight: 500;
+      }
+
+      #homepage-hero h3 {
+/*        font-size: 4em; */
+        font-weight: 100;
+      }
+
+      #homepage-hero a {
+        font-weight: 300;
+      }
+
+      #homepage-hero a,
+      #homepage-hero h1,
+      #homepage-hero h3 {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 1px 1px #000;
+      }
+
+      #homepage-hero h2 {
+        color: #0090B5;
+        text-shadow: 1px 1px #000030;
+      }
+
+      #homepage-hero ul li i.fa-check {
+        color: green;
+        text-shadow: rgb(144, 238, 144) -1px -1px, rgb(0, 100, 0) 1px 1px;
+        position: relative;
+        top: 4px;
+      }
+
+      #homepage-more-info {
+        background: lavender;
+        height: 650px;
+        padding: 70px 20px 0;
+        position: relative;
+        text-align: left;
+      }
+
+      #homepage-more-info h4 {
+        font-size: 1.3rem;
+      }
+
+      #homepage-more-info h2,
+      #homepage-more-info h4,
+      #homepage-more-info p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+      }
+
+      #webdesign-hero {
+        background: #074e68;
+        height: 650px;
+        padding: 100px 20px 0;
+        position: relative;
+        text-align: left;
+      }
+
+      #webdesign-hero h1 {
+        font-size: 4em;
+        font-weight: 500;
+      }
+
+      #webdesign-hero a {
+        font-weight: 300;
+      }
+
+      #webdesign-hero a,
+      #webdesign-hero h1,
+      #webdesign-hero h2,
+      #webdesign-hero h3,
+      #webdesign-hero li {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 1px 1px #000;
+      }
+
+      #webdesign-hero ul li i.fa-check {
+        color: green;
+        text-shadow: rgb(144, 238, 144) -1px -1px, rgb(0, 100, 0) 1px 1px;
+        position: relative;
+        top: 4px;
+      }
+
+      #ppc-hero {
+        background: #074e68;
+        height: 650px;
+        padding: 100px 20px 0;
+        position: relative;
+        text-align: left;
+      }
+
+      #ppc-hero h1 {
+        font-size: 4em;
+        font-weight: 500;
+      }
+
+      #ppc-hero a {
+        font-weight: 300;
+      }
+
+      #ppc-hero a,
+      #ppc-hero h1,
+      #ppc-hero h3,
+      #ppc-hero li {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 1px 1px #000;
+      }
+
+      #ppc-hero ul li i.fa-check {
+        color: green;
+        text-shadow: rgb(144, 238, 144) -1px -1px, rgb(0, 100, 0) 1px 1px;
+        position: relative;
+        top: 4px;
+      }
+
+      #cro-hero {
+        background: #074e68;
+        height: 650px;
+        padding: 100px 20px 0;
+        position: relative;
+        text-align: left;
+      }
+
+      #cro-hero h1 {
+        font-size: 4em;
+        font-weight: 500;
+      }
+
+      #cro-hero a {
+        font-weight: 300;
+      }
+
+      #cro-hero a,
+      #cro-hero h1,
+      #cro-hero h3,
+      #cro-hero li {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 1px 1px #000;
+      }
+
+      #cro-hero ul li i.fa-check {
+        color: green;
+        text-shadow: rgb(144, 238, 144) -1px -1px, rgb(0, 100, 0) 1px 1px;
+        position: relative;
+        top: 4px;
+      }
+
+      #main {
+        background: lightblue;
+        padding: 100px 20px 0;
+        position: relative;
+        text-align: left;
+      }
+
+      #main h6,
+      #main h5,
+      #main h4,
+      #main h3,
+      #main h2,
+      #main h1,
+      #main a,
+      #main p,
+      #main li {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100 !important;
+      }
+
+      #main h5 {
+        font-weight: 500;
+      }
+
+      .centered-text {
+        text-align: center;
+      }
+
+      .product-icons img {
+        margin: 1rem 0 0;
+        max-height: 200px;
+        padding: 20px;
+      }
+
+      #newsletter {
+        background: none repeat scroll 0 0 #085a78;
+        padding: 20px 0 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100 !important;
+      }
+
+      #main-footer {
+        background: none repeat scroll 0 0 #074e68;
+        padding: 20px 0 0;
+      }
+
+      #main-footer h5,
+      #main-footer li {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100 !important;
+        color: #fff;
+      }
+
+      #bottom-footer {
+        background: #333;
+        color: #ccc;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100 !important;
+      }
+
+      #bottom-footer p {
+        font-size: 80%;
+        font-weight: 100;
+        font-family: 'Roboto', sans-serif;
+        margin-top:16px;
+      }
+
+      #video-container {
+        position: absolute;
+        z-index: 0;
+        top:0%;
+        left:0%;
+        height:100%;
+        width:100%;
+        overflow: hidden;
+      }
+
+      #video-container div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #074e68;
+        opacity: 0.7;
+          z-index: -1;
+      }
+
+      video {
+        position:absolute;
+        z-index:-2;
+      }
+
+      video.fillWidth {
+        width: 100%;
+      }
+
+      .top-bar {
+        background: transparent;
+        border-bottom: 1px solid #333;
+        position:relative;
+        z-index:1;
+      }
+
+      .top-bar .name h1 {
+        margin-top: -4px;
+          text-shadow: 1px 1px #333;
+      }
+
+      .top-bar .name h1 a {
+        font-weight: 300;
+      }
+
+      .top-bar .name h1 a,
+      nav section ul li a {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      nav.top-bar div.top-bar-section ul li a {
+        font-family: 'Roboto';
+        font-weight: 500;
+      }
+
+      .top-bar .name h1 a::before {
+        background-image: url('/images/logo.png');
+        background-repeat: no-repeat;
+        background-size: 32px 32px;
+        content: '';
+        display: inline-block;
+        height: 32px;
+        margin-right: 10px;
+        position: relative;
+        width: 32px;
+        top: 10px;
+      }
+
+      .top-bar-section ul li {
+        background: transparent;
+      }
+
+      div.top-bar-section ul li a {
+        background: transparent !important;
+          text-shadow: 1px 1px #333;
+      }
+
+      #homepage-hero {
+        background: transparent;
+        border-top: 1px solid #ccc;
+      }
+
+      .cookie-notice {
+        position: relative;
+        z-index: 1;
+        background: #ccc;
+        border-bottom: 1px solid #999;
+        font-family: 'Roboto';               
+        border-top: 1px solid #eee;
+        padding-left: 16px;
+        padding-right: 16px;
+
+/* */
+        display: none;
+      }
+
+      .cookie-notice p {
+        color: #000;
+        font-weight: 100;
+        margin: 0;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-shadow: 1px 1px #aaa;
+      }
+
+      .cookie-notice span {
+        float: right;
+      }
+
+      .cookie-notice span a {
+        color: #333;
+      }

@@ -1,0 +1,20 @@
+{
+  "name": "Sycamore Consulting",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sycamoreconsulting/sycamoreconsulting.github.io",
+  "authors": [
+    "Peter Johnson <peter.johnson@sycamoreconsulting.co.uk>"
+  ],
+  "description": "Sycamore Consulting Website",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
+}
