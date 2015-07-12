@@ -88,6 +88,6 @@ module.exports = function(grunt) {
 // Or a configuration which doesn't trash the HTML comments used by processhtml. (htmlmin ran before processhtml)
 //  grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
-  grunt.registerTask('default', ['sass', 'uglify', 'copy']);
-  grunt.registerTask('build', ['sass', 'uglify', 'copy']);
+  grunt.registerTask('default', ['sass', 'uglify', 'imagemin', 'copy']);
+  grunt.registerTask('build', ['sass', 'uglify', 'imagemin', 'copy']);
 };
