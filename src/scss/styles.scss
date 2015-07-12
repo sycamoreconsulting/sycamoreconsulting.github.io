@@ -3,42 +3,42 @@
 @import "roboto";
 
 // Or selectively include components
-@import
-  "foundation/components/accordion",
-  "foundation/components/alert-boxes",
-  "foundation/components/block-grid",
-  "foundation/components/breadcrumbs",
-  "foundation/components/button-groups",
-  "foundation/components/buttons",
-  "foundation/components/clearing",
-  "foundation/components/dropdown",
-  "foundation/components/dropdown-buttons",
-  "foundation/components/flex-video",
-  "foundation/components/forms",
-  "foundation/components/grid",
-  "foundation/components/inline-lists",
-  "foundation/components/joyride",
-  "foundation/components/keystrokes",
-  "foundation/components/labels",
-  "foundation/components/magellan",
-  "foundation/components/orbit",
-  "foundation/components/pagination",
-  "foundation/components/panels",
-  "foundation/components/pricing-tables",
-  "foundation/components/progress-bars",
-  "foundation/components/reveal",
-  "foundation/components/side-nav",
-  "foundation/components/split-buttons",
-  "foundation/components/sub-nav",
-  "foundation/components/switches",
-  "foundation/components/tables",
-  "foundation/components/tabs",
-  "foundation/components/thumbs",
-  "foundation/components/tooltips",
+//@import
+//  "foundation/components/accordion",
+//  "foundation/components/alert-boxes",
+//  "foundation/components/block-grid",
+//  "foundation/components/breadcrumbs",
+//  "foundation/components/button-groups",
+//  "foundation/components/buttons",
+//  "foundation/components/clearing",
+//  "foundation/components/dropdown",
+//  "foundation/components/dropdown-buttons",
+//  "foundation/components/flex-video",
+//  "foundation/components/forms",
+//  "foundation/components/grid",
+//  "foundation/components/inline-lists",
+//  "foundation/components/joyride",
+//  "foundation/components/keystrokes",
+//  "foundation/components/labels",
+//  "foundation/components/magellan",
+//  "foundation/components/orbit",
+//  "foundation/components/pagination",
+//  "foundation/components/panels",
+//  "foundation/components/pricing-tables",
+//  "foundation/components/progress-bars",
+//  "foundation/components/reveal",
+//  "foundation/components/side-nav",
+//  "foundation/components/split-buttons",
+//  "foundation/components/sub-nav",
+//  "foundation/components/switches",
+//  "foundation/components/tables",
+//  "foundation/components/tabs",
+//  "foundation/components/thumbs",
+//  "foundation/components/tooltips",
 //  "foundation/components/top-bar",
-  "foundation/components/type",
-  "foundation/components/offcanvas",
-  "foundation/components/visibility";
+//  "foundation/components/type",
+//  "foundation/components/offcanvas",
+//  "foundation/components/visibility";
 
 
 //  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -77,39 +77,7 @@
         font-weight: 100;
       }
 
-      #webdesign-hero {
-        background: #074e68;
-        height: 650px;
-        padding: 100px 20px 0;
-        position: relative;
-        text-align: left;
-      }
 
-      #webdesign-hero h1 {
-        font-size: 4em;
-        font-weight: 500;
-      }
-
-      #webdesign-hero a {
-        font-weight: 300;
-      }
-
-      #webdesign-hero a,
-      #webdesign-hero h1,
-      #webdesign-hero h2,
-      #webdesign-hero h3,
-      #webdesign-hero li {
-        color: #fff;
-        font-family: 'Roboto', sans-serif;
-        text-shadow: 1px 1px #000;
-      }
-
-      #webdesign-hero ul li i.fa-check {
-        color: green;
-        text-shadow: rgb(144, 238, 144) -1px -1px, rgb(0, 100, 0) 1px 1px;
-        position: relative;
-        top: 4px;
-      }
 
       #ppc-hero {
         background: #074e68;

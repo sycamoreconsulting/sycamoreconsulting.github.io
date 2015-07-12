@@ -15,7 +15,7 @@
 		@import "atf/top-bar";
 		@import "atf/video-container";
 
-		#homepage-hero {
+		#webdesign-hero {
 			background: transparent;
 			border-top: 1px solid #ccc;
 
@@ -24,7 +24,9 @@
 
 			h1,
 			h2,
-			h3 {
+			h3,
+			li,
+			a {
 				font-family: 'Roboto', sans-serif;
 			}
 
@@ -48,7 +50,9 @@
 
 			a,
 			h1,
-			h3 {
+			h2,
+			h3,
+			li {
 				color: #fff;
 				text-shadow: 1px 1px #000;
 			}

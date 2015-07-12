@@ -1,0 +1,46 @@
+		nav.top-bar {
+			background: transparent;
+			border-bottom: 1px solid #333;
+			position:relative;
+			z-index:1;
+
+			.name {
+				h1 {
+					margin-top: -4px;
+					text-shadow: 1px 1px #333;
+
+					a::before {
+						background-image: url('data:image/png;base64,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');
+						background-repeat: no-repeat;
+						background-size: 32px 32px;
+						content: '';
+						display: inline-block;
+						height: 32px;
+						margin-right: 10px;
+						position: relative;
+						width: 32px;
+						top: 10px;
+					}
+
+					a {
+						font-family: 'Roboto', sans-serif;
+						font-weight: 300;
+					}
+				}
+			}
+
+			div.top-bar-section {
+				ul {
+					li {
+						background: transparent;
+
+						a {
+							background: transparent !important;
+							font-family: 'Roboto', sans-serif;
+							font-weight: 500;
+							text-shadow: 1px 1px #333;
+						}
+					}
+				}
+			}
+		}

@@ -1,0 +1,28 @@
+		.cookie-notice {
+			position: relative;
+			z-index: 1;
+			background: #ccc;
+			border-bottom: 1px solid #999;
+			font-family: 'Roboto';
+			border-top: 1px solid #eee;
+			padding-left: 16px;
+			padding-right: 16px;
+			display: none;
+
+			p {
+				color: #000;
+				font-weight: 100;
+				margin: 0;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				text-shadow: 1px 1px #aaa;
+			}
+
+			span {
+				float: right;
+
+				a {
+					color: #333;
+				}
+			}
+		}
