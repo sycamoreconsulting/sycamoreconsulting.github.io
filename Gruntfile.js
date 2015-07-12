@@ -39,14 +39,19 @@ module.exports = function(grunt) {
       }
     },
     
-    processhtml: {
-      options: {
-        // Task-specific options go here. 
-      },
-      dist: {
-        files: {
-          'dest/app.html': ['src/html/app.html']
-        }
+    imagemin: {                           // Task 
+      dist: {                             // Target 
+        options: {                        // Target options 
+          optimizationLevel: 7,
+          svgoPlugins: [{ removeViewBox: false }],
+//          use: [mozjpeg()]
+        },
+        files: [{
+          expand: true,                   // Enable dynamic expansion 
+          cwd: 'src/images/',             // Src matches are relative to this path 
+          src: ['**/*.{png,jpg,gif}'],    // Actual patterns to match 
+          dest: 'assets/images/'          // Destination path prefix 
+        }]
       }
     },
 
@@ -76,6 +81,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 // HTML-minify currently trashes the Chrome App, so it is disabled for now.
 // Until a configuration can be found that doesn't trash the HTML inside the included Javascript. (htmlmin ran after processhtml)
