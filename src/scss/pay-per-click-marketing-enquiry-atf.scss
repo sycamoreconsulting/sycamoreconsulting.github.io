@@ -7,9 +7,13 @@
 // Small screens
 @media only screen {
 	body {
-		background: lightblue;
+		background-color: #085a78;
 		font-weight: 100;
 		overflow-x: hidden;
+
+		label.right {
+			color: #fff;
+		}
 
 		@import "atf/cookie-notice";
 		@import "atf/top-bar";
@@ -18,7 +22,7 @@
 		#enquiry-main {
 			background: transparent;
 			border-top: 1px solid #ccc;
-
+			padding: 10px;
 			position: relative;
 			text-align: left;
 
