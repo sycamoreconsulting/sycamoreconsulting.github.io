@@ -23,7 +23,7 @@ function loadStyles() {
 	var cb = function() {
 		var l = document.createElement('link'); l.rel = 'stylesheet';
 		l.href = '/assets/css/styles.min.css';
-		var h = document.getElementsByTagName('head')[0]; h.parentNode.append(l);
+		var h = document.getElementsByTagName('head')[0]; h.append(l);
 	};
 	var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
 	if (raf) raf(cb);
