@@ -14,6 +14,8 @@ module.exports = function(grunt) {
         files: {
           'assets/css/styles.min.css': 'src/scss/styles.scss',
           'assets/css/index-atf.min.css': 'src/scss/index-atf.scss',
+          'assets/css/conversion-rate-optimisation-atf.min.css': 'src/scss/conversion-rate-optimisation-atf.scss',
+          'assets/css/pay-per-click-marketing-atf.min.css': 'src/scss/pay-per-click-marketing-atf.scss',
           'assets/css/website-design-atf.min.css': 'src/scss/website-design-atf.scss'
         }
       }
