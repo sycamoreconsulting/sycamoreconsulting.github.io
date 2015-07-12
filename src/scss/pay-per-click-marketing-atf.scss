@@ -4,16 +4,16 @@
 
 @import "roboto-latin";
 
+@import "atf/cookie-notice";
+@import "atf/top-bar";
+@import "atf/video-container";
+
 // Small screens
 @media only screen {
 	body {
 		background: lightblue;
 		font-weight: 100;
 		overflow-x: hidden;
-
-		@import "atf/cookie-notice";
-		@import "atf/top-bar";
-		@import "atf/video-container";
 
 		#ppc-hero {
 			background: transparent;

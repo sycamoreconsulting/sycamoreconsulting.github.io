@@ -4,6 +4,10 @@
 
 @import "roboto-latin";
 
+@import "atf/cookie-notice";
+@import "atf/top-bar";
+@import "atf/video-container";
+
 // Small screens
 @media only screen {
 	body {
@@ -14,10 +18,6 @@
 		label.right {
 			color: #fff;
 		}
-
-		@import "atf/cookie-notice";
-		@import "atf/top-bar";
-		@import "atf/video-container";
 
 		#enquiry-main {
 			background: transparent;
