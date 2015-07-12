@@ -63,9 +63,9 @@ module.exports = function(grunt) {
         files: [
 // Copy the Fonts
 // Roboto
-          {cwd: 'src/', expand: true, flatten: true, src: 'fonts/*', dest: 'assets/css/fonts/' },
+          {cwd: 'src/', expand: true, flatten: true, src: 'fonts/*', dest: 'assets/fonts/' },
 // Font-Awesome
-          {cwd: 'src/', expand: true, flatten: true, src: 'bower_components/font-awesome/fonts/*', dest: 'assets/css/fonts/' }
+          {cwd: 'src/', expand: true, flatten: true, src: 'bower_components/font-awesome/fonts/*', dest: 'assets/fonts/' }
         ]
       }
     },
