@@ -21,9 +21,9 @@ module.exports = function(grunt) {
       dev: {
         options: {
           preserveComments: 'all',
-//          beautify: false,
-          compress: false,
-          mangle: false
+          beautify: false,
+          compress: true,
+          mangle: true
         },
         files: {
           'assets/js/scripts.min.js': [
