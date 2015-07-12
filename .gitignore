@@ -1,3 +1,4 @@
 node_modules
 _site/
 src/bower_components
+src/html/_includes/assets

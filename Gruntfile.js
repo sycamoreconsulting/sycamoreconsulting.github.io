@@ -13,10 +13,10 @@ module.exports = function(grunt) {
         },
         files: {
           'assets/css/styles.min.css': 'src/scss/styles.scss',
-          'assets/css/index-atf.min.css': 'src/scss/index-atf.scss',
-          'assets/css/conversion-rate-optimisation-atf.min.css': 'src/scss/conversion-rate-optimisation-atf.scss',
-          'assets/css/pay-per-click-marketing-atf.min.css': 'src/scss/pay-per-click-marketing-atf.scss',
-          'assets/css/website-design-atf.min.css': 'src/scss/website-design-atf.scss'
+          'src/html/_includes/assets/css/index-atf.min.css': 'src/scss/index-atf.scss',
+          'src/html/_includes/assets/css/conversion-rate-optimisation-atf.min.css': 'src/scss/conversion-rate-optimisation-atf.scss',
+          'src/html/_includes/assets/css/pay-per-click-marketing-atf.min.css': 'src/scss/pay-per-click-marketing-atf.scss',
+          'src/html/_includes/assets/css/website-design-atf.min.css': 'src/scss/website-design-atf.scss'
         }
       }
     },
@@ -70,6 +70,19 @@ module.exports = function(grunt) {
       }
     },
 
+    processhtml: {
+      options: {
+        data: { },
+        recursive: true
+      },
+      dist: {
+        files: {
+          'index.html': ['src/html/index.html']
+//          'dist/index.html': ['src/html/index.html']
+        }
+      }
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
@@ -85,12 +98,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-processhtml');
 
 // HTML-minify currently trashes the Chrome App, so it is disabled for now.
 // Until a configuration can be found that doesn't trash the HTML inside the included Javascript. (htmlmin ran after processhtml)
 // Or a configuration which doesn't trash the HTML comments used by processhtml. (htmlmin ran before processhtml)
 //  grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
-  grunt.registerTask('default', ['sass', 'uglify', 'imagemin', 'copy']);
-  grunt.registerTask('build', ['sass', 'uglify', 'imagemin', 'copy']);
+  grunt.registerTask('default', ['sass', 'uglify', 'imagemin', 'copy', 'processhtml']);
+  grunt.registerTask('build', ['sass', 'uglify', 'imagemin', 'copy', 'processhtml']);
 };
