@@ -65,6 +65,10 @@
 					}
 				}
 
+				ul.left {
+					display: block;
+				}
+
 				ul.right {
 					display: none;
 				}
@@ -78,7 +82,7 @@
 		nav.top-bar {
 			div.top-bar-section {
 				ul.left {
-					display: none;
+					display: block;
 				}
 			}
 		}
