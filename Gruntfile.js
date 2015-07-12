@@ -12,7 +12,8 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'assets/css/styles.min.css': 'src/scss/styles.scss'
+          'assets/css/styles.min.css': 'src/scss/styles.scss',
+          'assets/css/index-atf.min.css': 'src/scss/index-atf.scss'
         }
       }
     },
