@@ -24,7 +24,9 @@
 
 			h1,
 			h2,
-			h3 {
+			h3,
+			li,
+			a {
 				font-family: 'Roboto', sans-serif;
 			}
 
@@ -81,8 +83,9 @@
 	body {
 
 		#video-container {
-			height:100%;
-			width:100%;
+			video {
+				width:100%;
+			}
 		}
 
 		#homepage-hero {

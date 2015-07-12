@@ -4,7 +4,7 @@
 			top:0%;
 			left:0%;
 			height:100%;
-			width:160%;
+			width:100%;
 			overflow: hidden;
 
 			div {
@@ -21,7 +21,7 @@
 			
 			video {
 				position:absolute;
-				width: 100%;
+				width: 160%;
 				z-index:-2;			
 			}
 		}

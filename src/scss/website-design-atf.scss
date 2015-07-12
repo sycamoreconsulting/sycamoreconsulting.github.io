@@ -85,8 +85,9 @@
 	body {
 
 		#video-container {
-			height:100%;
-			width:100%;
+			video {
+				width:100%;
+			}
 		}
 
 		#webdesign-hero {
