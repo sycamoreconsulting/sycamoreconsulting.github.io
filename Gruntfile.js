@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           preserveComments: false,
           beautify: false,
           compress: true,
-          mangle: true
+          mangle: false
         },
         files: {
           'assets/js/scripts.min.js': [
