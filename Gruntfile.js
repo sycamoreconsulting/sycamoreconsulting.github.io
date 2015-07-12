@@ -16,6 +16,7 @@ module.exports = function(grunt) {
           'src/html/_includes/assets/css/index-atf.min.css': 'src/scss/index-atf.scss',
           'src/html/_includes/assets/css/conversion-rate-optimisation-atf.min.css': 'src/scss/conversion-rate-optimisation-atf.scss',
           'src/html/_includes/assets/css/pay-per-click-marketing-atf.min.css': 'src/scss/pay-per-click-marketing-atf.scss',
+          'src/html/_includes/assets/css/pay-per-click-marketing-enquiry-atf.min.css': 'src/scss/pay-per-click-marketing-enquiry-atf.scss',
           'src/html/_includes/assets/css/website-design-atf.min.css': 'src/scss/website-design-atf.scss'
         }
       }
@@ -77,8 +78,10 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'index.html': ['src/html/index.html']
-//          'dist/index.html': ['src/html/index.html']
+          'index.html': ['src/html/index.html'],
+          'pay-per-click-marketing/index.html': ['src/html/pay-per-click-marketing/index.html'],
+          'pay-per-click-marketing/enquiry/index.html': ['src/html/pay-per-click-marketing/enquiry/index.html'],
+          'pay-per-click-marketing/enquiry/completed/index.html': ['src/html/pay-per-click-marketing/enquiry/completed/index.html']
         }
       }
     },
