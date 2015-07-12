@@ -16,6 +16,8 @@ $(document).ready(function() {
 	});
 
 	loadStyles();
+
+	$(document).foundation();
 });
 
 
