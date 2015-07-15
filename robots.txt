@@ -1,10 +1,7 @@
 # Remove Enquiry Forms from Search Indexes
 User-agent: *
-Disallow: /conversion-rate-optimisation/enquiry/
 Disallow: /conversion-rate-optimisation/enquiry/completed/
-Disallow: /pay-per-click-marketing/enquiry/
 Disallow: /pay-per-click-marketing/enquiry/completed/
-Disallow: /website-design/enquiry/
 Disallow: /website-design/enquiry/completed/
 
 # Stop aboutus.org from scraping content

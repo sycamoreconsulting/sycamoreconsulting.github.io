@@ -1,29 +1,45 @@
----
----
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-  {% assign url = post.url|remove:'index.html' %}
-    <url>
-      <loc>{{ site.url }}{{ url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-  {% endfor %}
-  {% for page in site.pages %}
-    {% if page.sitemap != null and page.sitemap != empty %}
-      {% assign url = page.url|remove:'index.html' %}
-      <url>
-        <loc>{{ site.url }}{{ url }}</loc>
-        <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-        <priority>{{ page.sitemap.priority }}</priority>
-       </url>
-    {% endif %}
-  {% endfor %}
+<urlset
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>
+      http://www.sycamoreconsulting.co.uk/
+    </loc>
+    <lastmod>2015-07-16T00:15:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>
+      http://www.sycamoreconsulting.co.uk/conversion-rate-optimisation/
+    </loc>
+    <lastmod>2015-07-16T00:15:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>
+      http://www.sycamoreconsulting.co.uk/pay-per-click-marketing/
+    </loc>
+    <lastmod>2015-07-16T00:15:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>
+      http://www.sycamoreconsulting.co.uk/website-design/
+    </loc>
+    <lastmod>2015-07-16T00:15:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>
+      http://www.sycamoreconsulting.co.uk/2014/06/25/how-to-block-spam-bots-by-country.html
+    </loc>
+    <lastmod>2014-06-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
